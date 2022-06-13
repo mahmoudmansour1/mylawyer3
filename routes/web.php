@@ -14,9 +14,12 @@
 use SebastianBergmann\Environment\Console;
 use Illuminate\Support\Facades\App;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+//Route::get('/', function () {
+//    return view('welcome');
+//})->name('home');
+Route::get('/','HomeController@index')->name('home');
+// switch language
+Route::get('/switch_lang/{locale}','HomeController@changeLang')->name('switch_lang');
 
 Route::get('/page/{slug}', 'PagesController@index')->name('pageDetails');
 Route::get('/contact-us', 'PagesController@contactus')->name('contactUs');
@@ -26,9 +29,3 @@ Route::get('/payonline/{token}', 'PaymentController@getInfo')->name('paypage');
 Route::get('/pay/{token}', 'PaymentController@payInvoice')->name('pay');
 Route::get('/pay/{token}/{staus}/{payment}', 'PaymentController@payReturn')->name('paySuccess');
 
-// switch language
-Route::get('/switch_lang/{locale}', function ($locale = '') {
-    Session()->put('locale', $locale);
-    \App::setLocale($locale);
-    return redirect()->back();
-})->name('switch_lang');

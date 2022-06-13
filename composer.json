@@ -13,12 +13,12 @@
         "brozot/laravel-fcm": "^1.3",
         "encore/laravel-admin": "1.*",
         "fideloper/proxy": "^4.0",
+        "inspector-apm/inspector-laravel": "^4.7",
         "laravel-admin-ext/chartjs": "^1.0",
         "laravel-admin-ext/latlong": "1.x",
         "laravel/framework": "5.8.*",
         "laravel/passport": "^7.1",
-        "laravel/tinker": "^1.0",
-        "lcobucci/jwt": "3.3.2"
+        "laravel/tinker": "^1.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

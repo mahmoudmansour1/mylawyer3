@@ -27,15 +27,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('setting', function () {
-           return Setting::first();
-        });
+//        $this->app->singleton('setting', function () {
+//           return Setting::first();
+//        });
     }
 
     public function sharedViews()
     {
-        View::share([
-             'setting' => app('setting'),
-        ]);
+//        View::share([
+//             'setting' => app('setting'),
+//        ]);
     }
 }

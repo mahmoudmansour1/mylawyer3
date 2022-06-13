@@ -37,12 +37,14 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \App\Http\Middleware\SwitchLang::class,
+            \Inspector\Laravel\Middleware\WebRequestMonitoring::class,
         ],
 
         'api' => [
             'throttle:60,1',
             'bindings',
             \App\Http\Middleware\LocalizationApiMiddleware::class,
+            \Inspector\Laravel\Middleware\WebRequestMonitoring::class,
         ],
     ];
 
