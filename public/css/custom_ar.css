@@ -1,0 +1,717 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;500;700;800;900&display=swap');
+
+/* width */
+::-webkit-scrollbar {
+ width:5px;
+ border-radius:5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ box-shadow: inset 0 0 5px #ccc;
+ border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: #2e3191;
+ border-radius:15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: #333;
+}
+* {
+	box-sizing: border-box;
+	transition: all 0.5s ease;
+}
+span {
+	color: #999999;
+	transition: all 0s ease;
+}
+html {
+	font-family: 'Tajawal', sans-serif!important;
+	background-color: #ffffff;
+}
+body {
+	font-family: 'Tajawal', sans-serif!important;
+	overflow-x: hidden;
+	background-color: #ffffff;
+	direction: rtl;
+	text-align: right!important;
+}	
+.img-responsive {
+	width: 100%;
+}
+textarea:focus, input:focus, button:focus, a:focus {
+	outline: none;
+}
+*:focus {
+	outline: none;
+}
+/* The container */
+.radio-container {
+	height: 23px;
+	display: block;
+	position: relative;
+	padding-left: 38px;
+	margin: 12px 0 21px 0px;
+	cursor: pointer;
+	font-size: 15px;
+	padding: 4px 35px 0px 35px;
+	float: left;
+	font-weight: normal;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.m-13-0 .radio-container {
+	margin: 13px 10px 13px 0px;
+}
+/* Hide the browser's default radio button */
+.radio-container input {
+	position: relative;
+	opacity: 0;
+	cursor: pointer;
+}
+/* Create a custom radio button */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 30px;
+	width: 30px;
+	background-color: #fff;
+	border: 2px solid #045b88;
+	border-radius: 50%;
+}
+.checkmark-checkbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 30px;
+	width: 30px;
+	background-color: #fff;
+	border: 1px solid #045b88;
+	border-radius: 0px;
+}
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {
+	background-color: #fff;
+}
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {
+	background-color: #fff;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+	display: block;
+}
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+	top: 7px;
+	left: 7px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #045b88;
+}
+.button-main {
+	font-size: 20px;
+	color: #fff;
+	font-weight: 400;
+	background: #068ace;
+	height: 40px;
+	width: 100%;
+	float: left;
+	border: 1px solid #068ace;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 50px;
+}
+p.mitst {
+	min-height: 239px;
+	margin-bottom: 20px;
+}
+/* ---------- */
+
+
+
+.frm-element .checkmark-checkbox {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	height: 40px;
+	width: 210px;
+	background-color: #fff;
+	border: 1px solid #d5dde3;
+	border-radius: 0px;
+	color: #003359;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 9px 0 0 0;
+	font-weight: 600;
+}
+.frm-element .radio-container input:checked ~ .checkmark-checkbox {
+	background-color: #003359;
+	color: #fff;
+}
+.frm-element .radio-container .checkmark-checkbox:after {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%!important;
+	height: 12px;
+	background: #045b88;
+	border-radius: 0px;
+	display: none!important;
+}
+.checkmark-checkbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 30px;
+	width: 30px;
+	background-color: #fff;
+	border: 2px solid #045b88;
+	border-radius: 0px;
+}
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark-checkbox {
+	background-color: #fff;
+}
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark-checkbox {
+	background-color: #fff;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark-checkbox:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark-checkbox:after {
+	display: block;
+}
+/* Style the indicator (dot/circle) */
+
+ 
+
+
+
+
+
+
+
+/* Custom style  */
+
+.wrapper {
+    width: 100%;
+    float: left;
+    overflow-x: hidden;
+	min-height: 100vh;
+}
+
+ .nav-hold {
+    width: auto;
+    float: right;
+    margin: 0px 0 0 0;
+}
+
+.nav-hold ul li a {
+    color: #000000!important;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 6px 0 6px;
+    float: left;
+	padding: 0.5rem 6px;
+	border: none!important;
+	outline: none!important;
+}
+
+.nav-tabs{
+	border: none;
+	width: 100%;
+}
+ 
+
+.nav-hold ul li a:hover{
+	color: #3e3965;
+	text-decoration: none;
+	
+}
+
+.nav-hold .collapse.navbar-collapse{
+	justify-content: right;
+}
+
+
+
+
+header {
+    margin: 20px 0 0 0;
+    position: relative;
+    z-index: 9;
+}
+
+
+
+.eng-title{
+	margin: 20px 0 20px 0;
+    padding: 0 0 17px 0;
+    border-bottom: solid 1px #d6d6d6;
+}
+
+
+.eng-title h1{
+     color: #5b529b;
+    font-weight: 300;
+    text-align: left;
+    font-size: 35px;
+    margin: 0 0 10px 0;
+    padding: 0px;
+}
+
+.eng-title h2{
+	color: #5b529b;
+    font-weight: 400;
+    text-align: left;
+    font-size: 23px;
+}
+
+.eng-title p{
+    font-weight: 400;
+    font-size: 14px;
+    color: #1a1a1b;
+    line-height: 19px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.logo-hold{
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.logo-hold a{
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.logo-hold a img{
+	float: left;
+	margin: 0px;
+	padding: 7px 0 0 0;
+	width: 100%;
+	max-width: 191px;
+}
+
+.about-hold{
+	    float: left;
+    margin: 88px 0 0 0;
+    padding: 0px;
+    width: 100%;
+}
+
+.about-hold p{
+    float: left;
+    margin: 0 0 44px 0;
+    padding: 0px;
+    width: 100%;
+    font-size: 16px;
+    line-height: normal;
+    color: #000;
+}
+
+.about-hold h2{
+	float: left;
+    margin: 0 0 20px 0;
+    padding: 0px;
+    width: 100%;
+    font-size: 22px;
+    line-height: normal;
+    color: #000;
+    font-weight: 700;
+}
+
+.store-link-hold{
+		float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+
+.store-link-hold .str-link{
+ 	float: left;
+    margin: 0 0 0px 5%;
+    padding: 0px;
+    width: auto;
+    max-width: 45%;
+}
+
+.store-link-hold .str-link a{
+		float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.store-link-hold .str-link a img{
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.content-sec{
+	float: left;
+    margin: 62px 0 0 0;
+    padding: 0px;
+    width: 100%;
+}
+
+
+footer{
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+     
+    bottom: 0px;
+}
+
+footer p{
+	position: absolute;
+    bottom: 0px;
+    font-size: 14px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    z-index: 9;
+}
+
+/* .circle-btm{
+    background: #0074A2;
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: 32%;
+    border-radius: 50%;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+	
+}*/
+
+.circle-btm{
+  background: #0074A2;
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: 32%;
+    border-radius: 50%;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+	
+}
+
+.mob-banner{
+		float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	position: relative;
+	z-index: 99;
+	direction: ltr;
+}
+
+.mob-banner ul{
+		float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.mob-banner ul li{
+		float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	list-style: none;
+}
+.mob-banner ul li img{
+	width: 100%;
+}
+footer{
+	z-index: 8!important;
+}
+
+.service-sec h2{
+	float: left;
+    margin: 0 0 20px 0;
+    padding: 0px;
+    width: 100%;
+    font-size: 20px;
+    line-height: normal;
+    color: #000;
+    font-weight: 700;
+}
+
+.service-sec{
+	text-align: center;
+}
+
+.service-sec img{
+float: none;
+    padding: 0px;
+    width: 100%;
+    max-width: 247px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul.slick-dots > li{
+	width: auto!important;
+	float:left!important;
+	margin: 0 0 0 6px;
+}
+
+
+ul.slick-dots > li.slick-active button{
+background: #000000;
+ 
+}
+.slick-dots button{
+	    font-size: 0px;
+    width: 12px;
+    height: 12px;
+    border: none;
+    background: #80B9D0;
+    border-radius: 30px;
+    float: left;
+}
+
+.about-us-hold{
+	float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.about-txt{
+	float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.about-txt p{
+	float: left;
+    margin: 0 0 22px 0;
+    padding: 0px;
+    width: 100%;
+	font-size: 16px;
+	line-height: normal;
+	text-align: right;
+}
+
+.about-txt  h2{
+    font-weight: 700;
+    font-size: 20px;
+    color: #0074A2;
+    text-align: right;
+    margin: 0 0 5px 0;
+    padding: 0px;
+    float: left;
+	width: 100%;
+	float: left;
+	
+}
+
+.general-content-hold {
+    position: relative;
+    z-index: 999;
+    margin-bottom: 71px;
+	width: 100%;
+	float: left;
+	padding: 0px;
+	max-height: 420px;
+	overflow-x: auto;
+}
+
+.general-content-hold .row{
+ width: 100%;
+}
+
+.about-image{
+	width: 100%;
+	float: left;
+	margin: 0px;
+}
+
+.about-image img{
+	width: 100%;
+	float: left;
+	margin: 0px;
+}
+.page-title{
+	width: 100%;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+.page-title h2{
+  
+    font-weight: 700;
+    font-size: 24px;
+    color: #0074A2;
+    text-align: right;
+    margin: 0 0 21px 0;
+    padding: 0 0 10px 0;
+    float: left;
+    width: 100%;
+    float: left;
+    text-transform: uppercase;
+	position: relative;
+ 
+}
+
+.page-title h2:after{
+    position: absolute;
+    height: 6px;
+    width: 50px;
+    right: 0px;
+    bottom: -4px;
+    background: #0074A2;
+    content: "";
+    border-radius: 20px;
+}
+
+.contact-hold{
+		width: 100%;
+	float: left;
+	margin: 100px 0px 0px 0px;
+	padding: 0px;
+}
+
+.contact-hold ul{
+		width: 100%;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	    display: flex;
+    justify-content: center;
+}
+
+.contact-hold ul li{
+width: 30%;
+    float: left;
+    margin: 0 3% 0 0;
+    padding: 0px;
+    list-style: none;
+	direction: ltr;
+}
+
+.contact-item {
+    border: solid 1px #ccc;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    border-radius: 30px;
+	    min-height: 170px;
+}
+
+.contact-item img{
+	
+}
+
+.contact-item h3{
+	color: #0074A2;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 11px 0 10px 0px;
+}
+
+.contact-item a{
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	color: #0074A2;
+	
+}
+
+#home-tab{
+	padding: 5px 0 0 0;
+}
+
+.nav-link.active{
+	color: #0074A2!important;
+}
+  
+.nav-link.active img{
+filter: invert(17%) sepia(100%) saturate(4533%) hue-rotate(185deg) brightness(98%) contrast(101%);
+}
+
+.social {
+	width: 500px;
+    float: none;
+    margin: 0 auto;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+    position: absolute;
+    z-index: 999;
+    margin-top: 100px;
+    left: 0px;
+    right: 0px;
+    bottom: 43px;
+}
+
+.social ul{
+	width: 100%;
+    float: left;
+    margin: 0 0px 0 0;
+    padding: 0px;
+    list-style: none;
+	 
+}
+
+.social ul li{
+    width: auto;
+    float: none;
+    margin: 0 6px 0 6px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.social ul li img{
+	max-width: 20px;
+}
+
+
+
